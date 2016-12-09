@@ -4,10 +4,6 @@
     "target_path": "kernel/htc/msm8974"
   },
   {
-    "repository": "device_qcom_common",
-    "target_path": "device/qcom/common"
-  },
-  {
     "repository": "hardware_sony_thermanager",
     "target_path": "hardware/sony/thermanager"
   }
