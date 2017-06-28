@@ -300,7 +300,6 @@ service hvdcp /system/bin/hvdcp
     class core
     user root
     group root
-    disabled
 
 service irsc_util /system/bin/irsc_util "/etc/sec_config"
     class main
@@ -437,10 +436,3 @@ on property:service.adb.root=1
 
 on property:sys.boot_completed=1
     start qrngp
-
-# Quick Charge 2.0
-on property:persist.usb.hvdcp.detect=true
-    start hvdcp
-
-on property:persist.usb.hvdcp.detect=false
-    stop hvdcp
